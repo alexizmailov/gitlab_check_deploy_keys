@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-# Written by Alex Izmaylov @ Infoxchange
+#############################################################################
 # This script parses your Puppetfile and makes sure all modules in it can be deployed using r10k
 # Uses GitLab API
 # License: Apache 2.0
+# This script is supplied 'as-is', in the hope that it will be useful, but
+# neither Infoxchange nor the authors make any warranties or guarantees
+# as to its correct operation, including its intended function.
+
+# Or in other words:
+#       Test it yourself, and make sure it works for YOU.
+# Author: Alex Izmaylov, Infoxchange company, Aug 2017
+#############################################################################
 
 import argparse, json
 from urllib.request import Request, urlopen
